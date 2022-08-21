@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		570877B828B26A890039853F /* LED_ControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570877B728B26A890039853F /* LED_ControlApp.swift */; };
-		570877BA28B26A890039853F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570877B928B26A890039853F /* ContentView.swift */; };
+		570877BA28B26A890039853F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570877B928B26A890039853F /* HomeScreen.swift */; };
 		570877BC28B26A8F0039853F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570877BB28B26A8F0039853F /* Assets.xcassets */; };
 		570877BF28B26A8F0039853F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570877BE28B26A8F0039853F /* Preview Assets.xcassets */; };
+		570877C928B289E20039853F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570877C828B289E20039853F /* ViewModel.swift */; };
+		570877CB28B28A320039853F /* Strip Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570877CA28B28A320039853F /* Strip Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		570877B428B26A890039853F /* LED Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LED Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		570877B728B26A890039853F /* LED_ControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LED_ControlApp.swift; sourceTree = "<group>"; };
-		570877B928B26A890039853F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		570877B928B26A890039853F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		570877BB28B26A8F0039853F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		570877BE28B26A8F0039853F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		570877C828B289E20039853F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		570877CA28B28A320039853F /* Strip Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strip Functions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		570877B628B26A890039853F /* LED Control */ = {
 			isa = PBXGroup;
 			children = (
+				570877C528B2707D0039853F /* Model */,
+				570877C628B270830039853F /* View */,
+				570877C728B270880039853F /* View Model */,
 				570877B728B26A890039853F /* LED_ControlApp.swift */,
-				570877B928B26A890039853F /* ContentView.swift */,
 				570877BB28B26A8F0039853F /* Assets.xcassets */,
 				570877BD28B26A8F0039853F /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				570877BE28B26A8F0039853F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		570877C528B2707D0039853F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				570877CA28B28A320039853F /* Strip Functions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		570877C628B270830039853F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				570877B928B26A890039853F /* HomeScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		570877C728B270880039853F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				570877C828B289E20039853F /* ViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570877BA28B26A890039853F /* ContentView.swift in Sources */,
+				570877BA28B26A890039853F /* HomeScreen.swift in Sources */,
+				570877C928B289E20039853F /* ViewModel.swift in Sources */,
 				570877B828B26A890039853F /* LED_ControlApp.swift in Sources */,
+				570877CB28B28A320039853F /* Strip Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +305,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +335,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

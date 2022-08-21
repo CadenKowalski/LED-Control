@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct LED_ControlApp: App {
+        
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            
+            HomeScreen()
+                .environmentObject(ViewModel())
         }
     }
 }
